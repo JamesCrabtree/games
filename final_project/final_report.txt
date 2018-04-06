@@ -1,0 +1,32 @@
+Group Name: Grumpy Orc
+Members: James Crabtree(jbc2978)
+
+Now that I am finished with the project, I am pretty happy with what I was able to produce.
+My goal was to create a working card game with a monte carlo tree search AI and I accomplished that.
+It was a really interesting problem to work on that ended up being really complex because of 
+all the cases that I had to consider, but I think I ended up finding a fairly elegant recursive
+solution. I had to develop the system entirely from scratch with only the theory since I 
+really couldn't find any examples of someone solving a similar problem in Unity and I had 
+to consider many factors specific to my game.
+
+This was my main reference for the project:
+https://jeffbradberry.com/posts/2015/09/intro-to-monte-carlo-tree-search/
+
+Some problems that I ran into along the way were that I had underestimated the amount of time it
+would take to implement the game's controls. I had to do a lot of work to maintain enough state
+for each card and the game as a whole to determine what actions a player was trying to do when they
+were clicking a card. They could be trying to drag it to the board, selecting it to use an 
+ability on it, selecting it for attack, etc. I think that I did a pretty good job of solving
+this problem so that actions require minimal player input without frustation, but the time
+I spent on this did significantly take away from other things like animation, sound, and 
+networking. Another problem that I had when working on AI was the extremely high computational
+load that this caused.  If I were to do this project again, I probably would have picked 
+Ogre for my engine, because I believe that heap allocation in my functions contributed 
+significantly to this problem.  Finally, I noticed on demo day that many people, including
+those that had played hearthstone in the past were struggling to understand what was happening 
+on the board so I would have liked to improve my UI  by adding better indicators for when you need
+to use an ability, more information displayed directly on the card, etc.
+
+Overall, though I feel that I managed to accomplish the goal of creating an intelligent AI that 
+is capable of making decisions and I'm really proud of my progress in such a short period of time
+

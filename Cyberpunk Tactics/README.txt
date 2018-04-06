@@ -1,10 +1,19 @@
-This is a RTS demo that I implemented using an A* algorithm for pathfinding. To play the demo 
-run the Pathfinder executable.  The C# program I wrote to implement the algorithm is located in
+This is a RTS demo that I implemented using an A* algorithm for pathfinding along with box-selection
+and a real-time projectile trajectory calculation algorithm. To play the demo 
+run the Pathfinder executable.  The C# programs I wrote to implement the various aspects of the game are located in
 the Assets folder as the files: 
-Grid.cs: Methods for creating the grid system that the pathfinding algorithm uses 
-Node.cs: A class containing information kept about each node of the grid
-Pathfinding.cs: contains main method of the program
-PlayerUnit.cs: Class containing methods for controlling units
+Cotrols/Grid.cs: Methods for creating the grid system that the pathfinding algorithm uses 
+Controls/Node.cs: A class containing information kept about each node of the grid
+Controls/Pathfinding.cs: contains main method of the program
+Controls/Controller.cs: Inheritable base class for unit control
+Controls/Heap.cs: An Implementation of a Binary Heap Data Structure
+Controls/UnitSelect.cs: Component that handles player input
+
+Marine/PlayerController.cs, PlayerHead.cs: inhereted from Controller to control units
+Marine/PlayerUnit.cs: Class containing methods and data for controllable units
+
+Projectiles/grenade.cs, bullet.cs: Instructs projectile on how to react to collisions
+Projectiles/LaunchArcRenderer.cs: Creates Line showing projected trajectory of grenade
 
 Controls
 --------
